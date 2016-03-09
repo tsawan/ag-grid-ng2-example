@@ -5,6 +5,7 @@ import ProficiencyFilter from './proficiencyFilter';
 import SkillFilter from './skillFilter';
 import RefData from './refData';
 
+// only import this if you are using the ag-Grid-Enterprise
 import 'ag-grid-enterprise/main';
 
 @Component({
