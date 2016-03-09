@@ -5,6 +5,8 @@ import ProficiencyFilter from './proficiencyFilter';
 import SkillFilter from './skillFilter';
 import RefData from './refData';
 
+import 'ag-grid-enterprise/main';
+
 @Component({
     selector: 'my-app',
     templateUrl: 'app/app.component.html',
@@ -91,7 +93,7 @@ export class AppComponent {
         if (this.gridOptions.api && this.rowData) {
             var model = this.gridOptions.api.getModel();
             var totalRows = this.rowData.length;
-            var processedRows = model.getVirtualRowCount();
+            var processedRows = model.getRowCount();
             this.rowCount = processedRows.toLocaleString() + ' / ' + totalRows.toLocaleString();
         }
     }
