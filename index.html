@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -12,6 +13,8 @@
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="node_modules/rxjs/bundles/Rx.js"></script>
     <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
 
     <!-- ag-grid CSS -->
     <!-- In your build, you will probably want to include the css in your bundle. -->
@@ -50,11 +53,12 @@
                 .then(null, console.error.bind(console));
     </script>
 
+    <base href="/">
 </head>
 
 <!-- 3. Display the application -->
 <body>
-<my-app>Loading...</my-app>
+<main-app>Loading...</main-app>
 </body>
 
 </html>

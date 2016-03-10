@@ -12,6 +12,9 @@
   },
   "files": [
     "node_modules/angular2/typings/browser.d.ts",
-    "app/boot.ts"
+    "app/boot.ts",
+    "app/MainComponent.ts",
+    "app/app.component.ts",
+    "app/Slate.ts"
   ]
 }

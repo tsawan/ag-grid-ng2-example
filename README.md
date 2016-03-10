@@ -1,3 +1,7 @@
+Reproducing the 'Attempt to use a dehydrated detector exception'.
+This is happending when ag-grid is used with Angular 2 router.
+
+==============
 
 ag-Grid
 ==============

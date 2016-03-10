@@ -5,6 +5,9 @@ import ProficiencyFilter from './proficiencyFilter';
 import SkillFilter from './skillFilter';
 import RefData from './refData';
 
+import {Router} from 'angular2/router';
+
+
 // only import this if you are using the ag-Grid-Enterprise
 import 'ag-grid-enterprise/main';
 
@@ -22,7 +25,14 @@ export class AppComponent {
     private columnDefs: any[];
     private rowCount: string;
 
-    constructor() {
+    move() {
+        try {
+            this.router.navigate(['/SlateComponent']);
+        }
+        catch (e) { console.error('swalloed dehyd'); }
+    }
+
+    constructor(private router: Router) {
         // we pass an empty gridOptions in, so we can grab the api out
         this.gridOptions = <GridOptions>{};
         this.createRowData();
